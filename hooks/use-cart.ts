@@ -24,11 +24,11 @@ const useCart = create(
     }
 
     set({ items: [...get().items, data] });
-    toast.success('Item added to cart.');
+    toast.success('Item added to cart.🎉');
   },
   removeItem: (id: string) => {
     set({ items: [...get().items.filter((item) => item.id !== id)] });
-    toast.success('Item removed from cart.');
+    toast.success('Item removed from cart.😊');
   },
   removeAll: () => set({ items: [] }),
 }), {
